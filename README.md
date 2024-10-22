@@ -77,4 +77,33 @@ int main() {
     return 0;
 }
 ```
-![image](https://github.com/user-attachments/assets/bfc12666-7015-4b9f-a589-733653708710)
+![image](https://github.com/Mark-0428/2024090914016---01/blob/main/e53e6fd79c6bf53809fb58d643ada6cf.png)
+## 6.课后题，内容如下：
+```c
+#include <stdio.h>
+
+int zuidagongyueshu(int m, int n) 
+{
+    while (n!= 0) 
+    {
+        int c = n;
+        n = m % n;
+        m = c;
+    }
+    return m;
+}
+
+int main() 
+{
+    int m, n;
+    printf("请输入第一个整数 m:");
+    scanf("%d", &m);
+    printf("请输入第二个整数 n:");
+    scanf("%d", &n);
+
+    int max = zuidagongyueshu(m, n);
+    printf("m 和 n 的最大公约数是: %d\n", max);
+
+    return 0;
+}
+```
